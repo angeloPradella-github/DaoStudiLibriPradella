@@ -14,15 +14,15 @@ public class TestAutore {
 
 		AutoreImpl autoreImpl = new AutoreImpl(con);
 
-		System.out.println("Autore con ID 1: " + autoreImpl.get(1));
+//		System.out.println("Autore con ID 1: " + autoreImpl.get(1));
+//
+//		/////////////////////
+//
+//		System.out.println("Lista Autori: " + autoreImpl.getAll());
 
 		/////////////////////
-
-		System.out.println("Lista Autori: " + autoreImpl.getAll());
-
-		/////////////////////
-		Autore newAutore = new Autore(0, "Mario", "Rossi", 1985, null, 'M', "Italia");
-		System.out.println("Inserimento Autore " + newAutore.getNomeA() + ": " + autoreImpl.insert(newAutore));
+//		Autore newAutore = new Autore(0, "Mario", "Rossi", 1985, null, 'M', "Italia");
+//		System.out.println("Inserimento Autore " + newAutore.getNomeA() + ": " + autoreImpl.insert(newAutore));
 
 		/////////////////////
 		int idEliminareAutore = 6;

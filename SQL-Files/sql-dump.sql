@@ -2,7 +2,7 @@
 -- es_libri.autori definition
 
 CREATE TABLE `autori` (
-  `codiceA` int NOT NULL,
+  `codiceA` int AUTO_INCREMENT NOT NULL,
   `nomeA` varchar(100) DEFAULT NULL,
   `cognomeA` varchar(100) DEFAULT NULL,
   `annoN` int DEFAULT NULL,

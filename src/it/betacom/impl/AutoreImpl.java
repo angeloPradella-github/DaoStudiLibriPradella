@@ -106,7 +106,7 @@ public class AutoreImpl implements AutoreDAO {
 		ps.setString(1, a.getNomeA());
 		ps.setString(2, a.getCognomeA());
 		ps.setInt(3, a.getAnnoN());
-		ps.setInt(4, a.getAnnoM());
+		ps.setObject(4, a.getAnnoM());
 		ps.setString(5, String.valueOf(a.getSesso()));
 		ps.setString(6, a.getNazione());
 		ps.setInt(7, a.getCodiceA());
