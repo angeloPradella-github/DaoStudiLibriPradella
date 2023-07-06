@@ -61,7 +61,7 @@ ALTER TABLE `libri`
 ADD CONSTRAINT `libri_ibfk_1` FOREIGN KEY (`codiceA`) REFERENCES `autori` (`codiceA`) ON DELETE CASCADE;
 
 -- INSERT AUTORI
-INSERT INTO autori (id, nome, cognome, anno_nascita, anno_morte, sesso, nazione)
+INSERT INTO autori (codiceA, nomeA, cognomeA, annoN, annoM, sesso, nazione)
 VALUES 
 (1, 'Alessandro', 'Manzoni', 1785, 1873, 'M', 'Italia'),
 (2, 'Lev', 'Tolstoj', 1828, 1910, 'M', 'Russia'),
@@ -74,7 +74,7 @@ VALUES
 (9, 'Agatha', 'Christie', 1890, 1976, 'F', 'Regno Unito');
 
 -- editori
-INSERT INTO editori (id, nome, sede)
+INSERT INTO editori (codiceE, nome, sede)
 VALUES 
 (1, 'Mondadori - Nuovo', 'Milano'),
 (2, 'Rizzoli', 'Roma'),
@@ -87,7 +87,7 @@ VALUES
 
 -- generi 
 
-INSERT INTO generi (id, genere)
+INSERT INTO generi (codiceG, descrizione)
 VALUES 
 (1, 'Giallo'),
 (2, 'horror'),
@@ -96,7 +96,7 @@ VALUES
 
 
 -- libri 
-INSERT INTO libri (id, id_autore, titolo, pagine, anno, id_genere, id_editore)
+INSERT INTO libri (codiceR, codiceA, titolo, numPag, anno, codiceG, codiceE)
 VALUES 
 (1, 1, 'Il libro aggiornato', 300, 2023, 1, 1),
 (2, 1, 'Storia della colonna infame', 700, 1843, 3, 1),
