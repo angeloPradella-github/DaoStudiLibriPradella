@@ -96,8 +96,9 @@ VALUES
 
 
 -- libri 
-INSERT INTO libri (codiceR, codiceA, titolo, numPag, anno, codiceG, codiceE)
-VALUES 
+INSERT INTO es_libri.libri
+(codiceR, codiceA, titolo, numPag, anno, codiceG, codiceE)
+VALUES
 (1, 1, 'Il libro aggiornato', 300, 2023, 1, 1),
 (2, 1, 'Storia della colonna infame', 700, 1843, 3, 1),
 (3, 2, 'Guerra e pace', 600, 1876, 3, 1),
@@ -115,7 +116,8 @@ VALUES
 (15, 7, 'Va dove ti porta il cuore', 760, 1944, 4, 1),
 (16, 8, 'Gita al faro', 600, 1927, 4, 2),
 (17, 8, 'Orlando', 700, 1928, 4, 1),
-(18, 9, 'Assassinio sull Orient Express', 670, 1934, 1, 2),
+(18, 9, 'Assassinio sullOrient Express', 670, 1934, 1, 2),
 (19, 9, 'Sipario', 760, 1975, 1, 1);
+
 
 
